@@ -18,68 +18,70 @@ IMAGE_PATH = ('') # Download image path
 
 def url_jpg(URL_PATH, IMAGE_PATH):
     URLS = pd.read_csv(URL_PATH)
-    IMAGE_PATH = IMAGE_PATH
+    url = []
+    for i in enumerate(URLS.values):
+        links = i[1][0]
+        url.append(links)
 
-    def jpg(number, url, imagePath):
-        fileName = ('image-{}.jpg'.format(number))
-        imagePath = ('{}{}'.format(imagePath, fileName))
-        urllib.request.urlretrieve(url, imagePath)
+    for j in range(len(url)):
+        fileName = ('image{}.jpg'.format(j))
+        imagePath = ('{}{}'.format(IMAGE_PATH, fileName))
+        urllib.request.urlretrieve(url[j], imagePath)
         print('{} saved.'.format(fileName))
-
-    for number, url in enumerate(URLS.values):
-        jpg(number, url[0], IMAGE_PATH)
 
 def url_jpeg(URL_PATH, IMAGE_PATH):
     URLS = pd.read_csv(URL_PATH)
-    IMAGE_PATH = IMAGE_PATH
+    url = []
+    for i in enumerate(URLS.values):
+        links = i[1][0]
+        url.append(links)
 
-    def jpeg(number, url, imagePath):
-        fileName = ('image-{}.jpeg'.format(number))
-        imagePath = ('{}{}'.format(imagePath, fileName))
-        urllib.request.urlretrieve(url, imagePath)
+    for j in range(len(url)):
+        fileName = ('image{}.jpeg'.format(j))
+        imagePath = ('{}{}'.format(IMAGE_PATH, fileName))
+        urllib.request.urlretrieve(url[j], imagePath)
         print('{} saved.'.format(fileName))
-
-    for number, url in enumerate(URLS.values):
-        jpeg(number, url[0], IMAGE_PATH)
 
 def url_png(URL_PATH, IMAGE_PATH):
     URLS = pd.read_csv(URL_PATH)
-    IMAGE_PATH = IMAGE_PATH
+    url = []
+    for i in enumerate(URLS.values):
+        links = i[1][0]
+        url.append(links)
 
-    def png(number, url, imagePath):
-        fileName = ('image-{}.png'.format(number))
-        imagePath = ('{}{}'.format(imagePath, fileName))
-        urllib.request.urlretrieve(url, imagePath)
+    for j in range(len(url)):
+        fileName = ('image{}.png'.format(j))
+        imagePath = ('{}{}'.format(IMAGE_PATH, fileName))
+        urllib.request.urlretrieve(url[j], imagePath)
         print('{} saved.'.format(fileName))
 
-    for number, url in enumerate(URLS.values):
-        png(number, url[0], IMAGE_PATH)
 
 def url_bmp(URL_PATH, IMAGE_PATH):
     URLS = pd.read_csv(URL_PATH)
-    IMAGE_PATH = IMAGE_PATH
+    url = []
+    for i in enumerate(URLS.values):
+        links = i[1][0]
+        url.append(links)
 
-    def bmp(number, url, imagePath):
-        fileName = ('image-{}.bmp'.format(number))
-        imagePath = ('{}{}'.format(imagePath, fileName))
-        urllib.request.urlretrieve(url, imagePath)
+    for j in range(len(url)):
+        fileName = ('image{}.bmp'.format(j))
+        imagePath = ('{}{}'.format(IMAGE_PATH, fileName))
+        urllib.request.urlretrieve(url[j], imagePath)
         print('{} saved.'.format(fileName))
 
-    for number, url in enumerate(URLS.values):
-        bmp(number, url[0], IMAGE_PATH)
 
 def url_gif(URL_PATH, IMAGE_PATH):
     URLS = pd.read_csv(URL_PATH)
-    IMAGE_PATH = IMAGE_PATH
+    url = []
+    for i in enumerate(URLS.values):
+        links = i[1][0]
+        url.append(links)
 
-    def gif(number, url, imagePath):
-        fileName = ('image-{}.gif'.format(number))
-        imagePath = ('{}{}'.format(imagePath, fileName))
-        urllib.request.urlretrieve(url, imagePath)
+    for j in range(len(url)):
+        fileName = ('image{}.gif'.format(j))
+        imagePath = ('{}{}'.format(IMAGE_PATH, fileName))
+        urllib.request.urlretrieve(url[j], imagePath)
         print('{} saved.'.format(fileName))
-
-    for number, url in enumerate(URLS.values):
-        gif(number, url[0], IMAGE_PATH)
 
 
 if __name__ == '__main__':
