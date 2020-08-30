@@ -83,8 +83,8 @@ def url_gif(URL_PATH, IMAGE_PATH):
 
 
 if __name__ == '__main__':
-    #url_jpg(URL_PATH, IMAGE_PATH)
-    #url_jpeg(URL_PATH, IMAGE_PATH)
-    #url_png(URL_PATH, IMAGE_PATH)
-    #url_bmp(URL_PATH, IMAGE_PATH)
+    url_jpg(URL_PATH, IMAGE_PATH)
+    url_jpeg(URL_PATH, IMAGE_PATH)
+    url_png(URL_PATH, IMAGE_PATH)
+    url_bmp(URL_PATH, IMAGE_PATH)
     url_gif(URL_PATH, IMAGE_PATH)
