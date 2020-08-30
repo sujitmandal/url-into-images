@@ -53,7 +53,6 @@ url_gif(URL_PATH, IMAGE_PATH)
 ## Required package’s:
 ```
 • pip install pandas
-
 ```
 ## License:
 MIT Licensed
