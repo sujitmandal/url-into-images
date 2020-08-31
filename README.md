@@ -1,3 +1,8 @@
+## Url Into Images :
+Automatically  Download Multiple Images.
+
+[![Downloads](https://pepy.tech/badge/url-into-images)](https://pepy.tech/project/url-into-images)
+
 ## Package Installation : 
 ```
 pip install url-into-images
@@ -5,7 +10,7 @@ pip install url-into-images
 
 [Package Link](https://pypi.org/project/url-into-images/)
 
-## Scrape Search Engine :
+## Url Into Images :
 provide image download link through csv file and it will download all the images. also you can chose different extension.
 ```
  • jpg
