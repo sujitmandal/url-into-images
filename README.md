@@ -1,7 +1,9 @@
 ## Url Into Images :
-Automatically  Download Multiple Images.
+[![Build Status](https://travis-ci.org/sujitmandal/url-into-images.svg?branch=master)](https://travis-ci.org/sujitmandal/url-into-images) [![GitHub license](https://img.shields.io/github/license/sujitmandal/url-into-images)](https://github.com/sujitmandal/url-into-images/blob/master/LICENSE) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/url-into-images) ![PyPI - Wheel](https://img.shields.io/pypi/wheel/url-into-images)
 
 [![Downloads](https://pepy.tech/badge/url-into-images)](https://pepy.tech/project/url-into-images)
+
+Automatically  Download Multiple Images.
 
 ## Package Installation : 
 ```
