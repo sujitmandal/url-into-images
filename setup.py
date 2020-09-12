@@ -10,7 +10,7 @@ def readme():
 
 setup(
     name = 'url-into-images',
-    version = '0.0.9',
+    version = '0.0.10',
     description = "provide image download link through csv file and it will download all the images. also you can chose different extension.",
     long_description = readme(),
     long_description_content_type = 'text/markdown',
