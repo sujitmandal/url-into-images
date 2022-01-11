@@ -1,65 +1,98 @@
-## Url Into Images :
-[![Build Status](https://travis-ci.org/sujitmandal/url-into-images.svg?branch=master)](https://travis-ci.org/sujitmandal/url-into-images) [![GitHub license](https://img.shields.io/github/license/sujitmandal/url-into-images)](https://github.com/sujitmandal/url-into-images/blob/master/LICENSE) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/url-into-images) ![PyPI - Wheel](https://img.shields.io/pypi/wheel/url-into-images) ![PyPI](https://img.shields.io/pypi/v/url-into-images)
+## Convert-Images-Into-Array:
+[![Build Status](https://travis-ci.org/sujitmandal/images-into-array.svg?branch=master)](https://travis-ci.org/sujitmandal/images-into-array) [![GitHub license](https://img.shields.io/github/license/sujitmandal/images-into-array)](https://github.com/sujitmandal/images-into-array/blob/master/LICENSE) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/images-into-array) ![PyPI - Wheel](https://img.shields.io/pypi/wheel/images-into-array) ![PyPI](https://img.shields.io/pypi/v/images-into-array)
 
-[![Downloads](https://pepy.tech/badge/url-into-images)](https://pepy.tech/project/url-into-images)
+[![Downloads](https://pepy.tech/badge/images-into-array)](https://pepy.tech/project/images-into-array) 
 
-Automatically  Download Multiple Images.
+Convert Multiple Images into a Array and Different Color Spaces into a Array.
 
-## Package Installation : 
+## Package Installation  : 
 ```
-pip install url-into-images
+pip install images-into-array
 ```
 
-[Package Link](https://pypi.org/project/url-into-images/)
+[Package Link](https://pypi.org/project/images-into-array/)
 
-## Url Into Images :
-provide image download link through csv file and it will download all the images. also you can chose different extension.
-```
- • jpg
+## Convert-Images-Into-Array:
+Convert Multiple Images into a Array and Different Color Spaces into a Array.This package fuction requres three argument one is path of the images folder and other is image_height and image_width.
 
- • jpeg
+OpenCV Document :
+-----------------
+[OpenCV Document](https://docs.opencv.org/3.4/de/d25/imgproc_color_conversions.html)
 
- • png
-
- • bmp
-
- • gif
-```
 ## How to import the module:
-```
-URL_PATH = ('') # csv file where image URL contain
-IMAGE_PATH = ('') # Download image path
-```
-## Download JPG
-```
-from url_into_images.url_into_images import url_jpg
+```python
+images_path = ('')
 
-url_jpg(URL_PATH, IMAGE_PATH)
+image_height = Enter The Image Size [32, 64, 128]
+
+image_width = Enter The Image Size [32, 64, 128]
 ```
-## Download JPEG
+## NORMAL :
+```python
+from images_into_array.images_into_array import images
+
+array = images(images_path, image_height, image_width)
+
+print(array.shape)
 ```
-from url_into_images.url_into_images import url_jpeg
-url_jpeg(URL_PATH, IMAGE_PATH)
+## RGB ↔ GRAY :
+```python
+from images_into_array.images_into_array import rgb_gray
+
+gray = rgb_gray(images_path, image_height, image_width)
+
+print(array.shape)
 ```
-## Download PNG
+## RGB ↔ CIE L*a*b* :
+```python
+from images_into_array.images_into_array import rgb_lab
+
+lav = rgb_lab(images_path, image_height, image_width)
+
+print(array.shape)
 ```
-from url_into_images.url_into_images import url_png
-url_png(URL_PATH, IMAGE_PATH)
+## RGB ↔ HLS :
+```python
+from images_into_array.images_into_array import rgb_hls
+
+hls = rgb_hls(images_path, image_height, image_width)
+
+print(array.shape)
 ```
-## Download BMP
+## RGB ↔ CIE L*u*v* :
+```python
+from images_into_array.images_into_array import rgb_luv
+
+luv = rgb_luv(images_path, image_height, image_width)
+
+print(array.shape)
 ```
-from url_into_images.url_into_images import url_bmp
-url_bmp(URL_PATH, IMAGE_PATH)
+## RGB ↔ HSV :
+```python
+from images_into_array.images_into_array import rgb_hsv
+
+hsv = rgb_hsv(images_path, image_height, image_width)
+
+print(array.shape)
 ```
-## Download GIF
-```
-from url_into_images.url_into_images import url_gif
-url_gif(URL_PATH, IMAGE_PATH)
+## RGB ↔ YCrCb JPEG (or YCC) :
+```python
+from images_into_array.images_into_array import rgb_ycrcb
+
+ycrcb = rgb_ycrcb(images_path, image_height, image_width)
+
+print(array.shape)
 ```
 
 ## Required package’s:
 ```
-• pip install pandas
+• conda install -c conda-forge opencv=4.2.0
+
+• pip install shuffle
+
+• pip install numpy
+
+• pip install tqdm
 ```
 ## License:
 MIT Licensed

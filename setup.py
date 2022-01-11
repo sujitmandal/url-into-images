@@ -1,5 +1,3 @@
-__author__ = 'Sujit Mandal'
-#Date : 30-08-2020
 from setuptools import setup 
 
 def readme():
@@ -9,12 +7,12 @@ def readme():
     return(README)
 
 setup(
-    name = 'url-into-images',
-    version = '0.0.10',
-    description = "provide image download link through csv file and it will download all the images. also you can chose different extension.",
+    name = 'images-into-array',
+    version = '2.0.6',
+    description = 'Convert Multiple Images into a Array and Different Color Spaces into a Array',
     long_description = readme(),
     long_description_content_type = 'text/markdown',
-    url = 'https://github.com/sujitmandal/url-into-images',
+    url = 'https://github.com/sujitmandal/images-into-array',
     author = 'Sujit Mandal',
     author_email = 'mandals974@gmail.com',
     license = 'MIT',
@@ -26,8 +24,10 @@ setup(
         'Programming Language :: Python :: 3.6',
         'Programming Language :: Python :: 3.7',
         'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
     ],
 
-    packages = ['url_into_images'],
+    packages = ['images_into_array'],
     include_package_data = True,
 )
