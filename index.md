@@ -1,37 +1,75 @@
-## Welcome to GitHub Pages
+[![Build Status](https://travis-ci.org/sujitmandal/url-into-images.svg?branch=master)](https://travis-ci.org/sujitmandal/url-into-images) [![GitHub license](https://img.shields.io/github/license/sujitmandal/url-into-images)](https://github.com/sujitmandal/url-into-images/blob/master/LICENSE) ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/url-into-images) ![PyPI - Wheel](https://img.shields.io/pypi/wheel/url-into-images) ![PyPI](https://img.shields.io/pypi/v/url-into-images)
 
-You can use the [editor on GitHub](https://github.com/sujitmandal/url-into-images/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+[![Downloads](https://pepy.tech/badge/url-into-images)](https://pepy.tech/project/url-into-images)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Automatically  Download Multiple Images.
 
-### Markdown
+## Package Installation : 
+```
+pip install url-into-images
+```
+## Url Into Images :
+provide image download link through csv file and it will download all the images. also you can chose different extension.
+```
+ • jpg
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+ • jpeg
 
-```markdown
-Syntax highlighted code block
+ • png
 
-# Header 1
-## Header 2
-### Header 3
+ • bmp
 
-- Bulleted
-- List
+ • gif
+```
+## How to import the module:
+```python
+URL_PATH = ('') # csv file where image URL contain
 
-1. Numbered
-2. List
+IMAGE_PATH = ('') # Download image path
+```
+## Download JPG
+```python
+from url_into_images.url_into_images import url_jpg
 
-**Bold** and _Italic_ and `Code` text
+url_jpg(URL_PATH, IMAGE_PATH)
+```
+## Download JPEG
+```python
+from url_into_images.url_into_images import url_jpeg
 
-[Link](url) and ![Image](src)
+url_jpeg(URL_PATH, IMAGE_PATH)
+```
+## Download PNG
+```python
+from url_into_images.url_into_images import url_png
+
+url_png(URL_PATH, IMAGE_PATH)
+```
+## Download BMP
+```python
+from url_into_images.url_into_images import url_bmp
+
+url_bmp(URL_PATH, IMAGE_PATH)
+```
+## Download GIF
+```python
+from url_into_images.url_into_images import url_gif
+
+url_gif(URL_PATH, IMAGE_PATH)
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Required package’s:
+```
+• pip install pandas
+```
+## License:
+MIT Licensed
 
-### Jekyll Themes
+## Author:
+Sujit Mandal
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/sujitmandal/url-into-images/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+[GitHub](https://github.com/sujitmandal)
 
-### Support or Contact
+[PyPi](https://pypi.org/user/sujitmandal/)
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+[LinkedIn](https://www.linkedin.com/in/sujit-mandal-91215013a/)
