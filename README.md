@@ -8,6 +8,7 @@ Automatically  Download Multiple Images.
 ```
 pip install url-into-images
 ```
+[Pypi Package Link](https://pypi.org/project/url-into-images/)
 
 ```
 conda install -c conda-forge url-into-images
